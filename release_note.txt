@@ -1,0 +1,3 @@
+#Aug 02, 2019: The first released version (v1.0)- have bug: The device address can not save to flash memory of ESP32 (the address device will be sent from application via BLE)
+
+#Aug 06, 2019: The second released version (v1.1)- Fixed the bug of version 1.1

@@ -1,0 +1,40 @@
+menu "Configuration"
+
+config AP_WIFI_SSID
+    string "WiFi SSID"
+    default "akaCoola"
+    help
+	SSID (network name) for the AP.
+
+config AP_WIFI_PASSWORD
+    string "WiFi Password"
+    default ""
+    help
+	WiFi password (WPA or WPA2) for the AP.
+
+config AP_LOGIN_USERNAME
+    string "Login user name"
+    default "admin"
+    help
+    Login user name for login page.
+
+config AP_LOGIN_PASSWORD
+    string "Login password"
+    default "admin"
+    help
+    Login password for login page.
+
+
+config MAX_STA_CONN
+    int "Max STA conn"
+    default 4
+    help
+	Max number of the STA connects to AP.
+
+config ESP_MAXIMUM_RETRY
+    int "Maximum retry"
+    default 5
+    help
+	Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+endmenu
